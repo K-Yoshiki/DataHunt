@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: SelectableRing1
+  m_Shader: {fileID: 4800000, guid: bafe43f2968cf4cb79be081068b049b8, type: 3}
+  m_ShaderKeywords: []
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 5f650638bc16b404ca62dd0c6efab0d4, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _BumpMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _ParallaxMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: tDiffuse
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _Shininess
+        second: .00999999978
+      data:
+        first:
+          name: _Parallax
+        second: .00499999989
+      data:
+        first:
+          name: _RimPower
+        second: 3
+      data:
+        first:
+          name: fX
+        second: .5
+      data:
+        first:
+          name: fY
+        second: .5
+      data:
+        first:
+          name: fExposure
+        second: .600000024
+      data:
+        first:
+          name: fDecay
+        second: .930000007
+      data:
+        first:
+          name: fDensity
+        second: .959999979
+      data:
+        first:
+          name: fWeight
+        second: .400000006
+      data:
+        first:
+          name: fClamp
+        second: 1
+      data:
+        first:
+          name: _Opacity
+        second: 1
+      data:
+        first:
+          name: _Outline
+        second: .0064999992
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 0, g: .958620548, b: 1, a: 1}
+      data:
+        first:
+          name: _SpecColor
+        second: {r: .148788914, g: .404008985, b: .470588207, a: 0}
+      data:
+        first:
+          name: _RimColor
+        second: {r: .25999999, g: .189999998, b: .159999996, a: 0}
+      data:
+        first:
+          name: _OutlineColor
+        second: {r: 0, g: 0, b: 0, a: 1}

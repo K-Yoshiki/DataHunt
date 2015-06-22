@@ -1,0 +1,280 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: stage3-1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.99699402, y: -3.07814741, z: -1.56504631}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c4ef05ab507f4f87adc9c8441828cec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isTutorial: 0
+  StageName: "\u30CF\u30FC\u30C9"
+  LevelName: "\u8E0A\u308A\u72C2\u3063\u3061\u3083\u3048\u266A\u624B\u7FBD\u5148\u30D5\u30A1\u30A4\u30A2\u30FC\uFF01"
+  StageBGM: {fileID: 8300000, guid: 7b598d7b902834780a8b39cb1b3556e9, type: 3}
+  BossBGM: {fileID: 8300000, guid: 3dcbc92d5fa29492ab23501ad8df7aa6, type: 3}
+  FieldDropTable:
+    dropPercent: 0
+    dropDataTable: []
+  BossDropTable:
+    dropPercent: 0
+    dropDataTable: []
+  PhaseList:
+  - Rails: 4
+    EnemySpawnList:
+    - SpawnTime: 0
+      DefRail: 1
+      DefAngle: 270
+      MoveSpeed: -230
+      EnemyType: 1
+      EnemyList:
+      - {fileID: 11400000, guid: 2de5052450d9b4557a784f4fecaded00, type: 2}
+      - {fileID: 11400000, guid: 2de5052450d9b4557a784f4fecaded00, type: 2}
+      - {fileID: 11400000, guid: 2de5052450d9b4557a784f4fecaded00, type: 2}
+      - {fileID: 11400000, guid: 2de5052450d9b4557a784f4fecaded00, type: 2}
+      - {fileID: 11400000, guid: 2de5052450d9b4557a784f4fecaded00, type: 2}
+      - {fileID: 11400000, guid: 2de5052450d9b4557a784f4fecaded00, type: 2}
+      - {fileID: 11400000, guid: 2de5052450d9b4557a784f4fecaded00, type: 2}
+      - {fileID: 11400000, guid: 2de5052450d9b4557a784f4fecaded00, type: 2}
+      - {fileID: 11400000, guid: 2de5052450d9b4557a784f4fecaded00, type: 2}
+      - {fileID: 11400000, guid: 2de5052450d9b4557a784f4fecaded00, type: 2}
+    - SpawnTime: 0
+      DefRail: 1
+      DefAngle: 200
+      MoveSpeed: 90
+      EnemyType: 1
+      EnemyList:
+      - {fileID: 11400000, guid: ee65009c301ca461e82bc61afaec762f, type: 2}
+      - {fileID: 11400000, guid: c360bb6e15796482fb752918c55d904e, type: 2}
+      - {fileID: 11400000, guid: ee65009c301ca461e82bc61afaec762f, type: 2}
+      - {fileID: 11400000, guid: 173baee604f2147f284a1693caa017d1, type: 2}
+      - {fileID: 11400000, guid: 2de5052450d9b4557a784f4fecaded00, type: 2}
+      - {fileID: 11400000, guid: c360bb6e15796482fb752918c55d904e, type: 2}
+      - {fileID: 11400000, guid: ee65009c301ca461e82bc61afaec762f, type: 2}
+      - {fileID: 11400000, guid: c360bb6e15796482fb752918c55d904e, type: 2}
+    - SpawnTime: 0
+      DefRail: 1
+      DefAngle: 150
+      MoveSpeed: 60
+      EnemyType: 1
+      EnemyList:
+      - {fileID: 11400000, guid: ee65009c301ca461e82bc61afaec762f, type: 2}
+      - {fileID: 11400000, guid: 173baee604f2147f284a1693caa017d1, type: 2}
+      - {fileID: 11400000, guid: ee65009c301ca461e82bc61afaec762f, type: 2}
+      - {fileID: 11400000, guid: 173baee604f2147f284a1693caa017d1, type: 2}
+      - {fileID: 11400000, guid: ee65009c301ca461e82bc61afaec762f, type: 2}
+      - {fileID: 11400000, guid: 173baee604f2147f284a1693caa017d1, type: 2}
+      - {fileID: 11400000, guid: ee65009c301ca461e82bc61afaec762f, type: 2}
+      - {fileID: 11400000, guid: 173baee604f2147f284a1693caa017d1, type: 2}
+    - SpawnTime: 0
+      DefRail: 0
+      DefAngle: 90
+      MoveSpeed: 50
+      EnemyType: 0
+      EnemyList:
+      - {fileID: 11400000, guid: 87b1687e4ebee4892b3e6ef5bff72534, type: 2}
+    - SpawnTime: 0
+      DefRail: 0
+      DefAngle: 100
+      MoveSpeed: 50
+      EnemyType: 0
+      EnemyList:
+      - {fileID: 11400000, guid: 87b1687e4ebee4892b3e6ef5bff72534, type: 2}
+    - SpawnTime: 0
+      DefRail: 0
+      DefAngle: 80
+      MoveSpeed: 50
+      EnemyType: 0
+      EnemyList:
+      - {fileID: 11400000, guid: 87b1687e4ebee4892b3e6ef5bff72534, type: 2}
+    - SpawnTime: 0
+      DefRail: 0
+      DefAngle: 70
+      MoveSpeed: 50
+      EnemyType: 0
+      EnemyList:
+      - {fileID: 11400000, guid: 87b1687e4ebee4892b3e6ef5bff72534, type: 2}
+    - SpawnTime: 0
+      DefRail: 0
+      DefAngle: 0
+      MoveSpeed: 200
+      EnemyType: 1
+      EnemyList:
+      - {fileID: 11400000, guid: 2de5052450d9b4557a784f4fecaded00, type: 2}
+      - {fileID: 11400000, guid: 2de5052450d9b4557a784f4fecaded00, type: 2}
+      - {fileID: 11400000, guid: 2de5052450d9b4557a784f4fecaded00, type: 2}
+      - {fileID: 11400000, guid: 2de5052450d9b4557a784f4fecaded00, type: 2}
+      - {fileID: 11400000, guid: 2de5052450d9b4557a784f4fecaded00, type: 2}
+      - {fileID: 11400000, guid: 2de5052450d9b4557a784f4fecaded00, type: 2}
+      - {fileID: 11400000, guid: 2de5052450d9b4557a784f4fecaded00, type: 2}
+      - {fileID: 11400000, guid: 2de5052450d9b4557a784f4fecaded00, type: 2}
+      - {fileID: 11400000, guid: 2de5052450d9b4557a784f4fecaded00, type: 2}
+  - Rails: 7
+    EnemySpawnList:
+    - SpawnTime: 0
+      DefRail: 4
+      DefAngle: 180
+      MoveSpeed: 60
+      EnemyType: 1
+      EnemyList:
+      - {fileID: 11400000, guid: ee65009c301ca461e82bc61afaec762f, type: 2}
+      - {fileID: 11400000, guid: ee65009c301ca461e82bc61afaec762f, type: 2}
+      - {fileID: 11400000, guid: ee65009c301ca461e82bc61afaec762f, type: 2}
+      - {fileID: 11400000, guid: c360bb6e15796482fb752918c55d904e, type: 2}
+      - {fileID: 11400000, guid: 5387f09a8d34e4d0ba25db81a0b9e7ba, type: 2}
+      - {fileID: 11400000, guid: c360bb6e15796482fb752918c55d904e, type: 2}
+      - {fileID: 11400000, guid: 5387f09a8d34e4d0ba25db81a0b9e7ba, type: 2}
+      - {fileID: 11400000, guid: 5387f09a8d34e4d0ba25db81a0b9e7ba, type: 2}
+      - {fileID: 11400000, guid: 5387f09a8d34e4d0ba25db81a0b9e7ba, type: 2}
+      - {fileID: 11400000, guid: c360bb6e15796482fb752918c55d904e, type: 2}
+      - {fileID: 11400000, guid: 5387f09a8d34e4d0ba25db81a0b9e7ba, type: 2}
+      - {fileID: 11400000, guid: 5387f09a8d34e4d0ba25db81a0b9e7ba, type: 2}
+      - {fileID: 11400000, guid: 5387f09a8d34e4d0ba25db81a0b9e7ba, type: 2}
+      - {fileID: 11400000, guid: c360bb6e15796482fb752918c55d904e, type: 2}
+      - {fileID: 11400000, guid: 5387f09a8d34e4d0ba25db81a0b9e7ba, type: 2}
+      - {fileID: 11400000, guid: c360bb6e15796482fb752918c55d904e, type: 2}
+      - {fileID: 11400000, guid: 5387f09a8d34e4d0ba25db81a0b9e7ba, type: 2}
+      - {fileID: 11400000, guid: c360bb6e15796482fb752918c55d904e, type: 2}
+      - {fileID: 11400000, guid: 5387f09a8d34e4d0ba25db81a0b9e7ba, type: 2}
+    - SpawnTime: 0
+      DefRail: 1
+      DefAngle: 50
+      MoveSpeed: -80
+      EnemyType: 1
+      EnemyList:
+      - {fileID: 11400000, guid: fe3326932904e47a6a0d27953b2652a5, type: 2}
+      - {fileID: 11400000, guid: 173baee604f2147f284a1693caa017d1, type: 2}
+      - {fileID: 11400000, guid: 173baee604f2147f284a1693caa017d1, type: 2}
+      - {fileID: 11400000, guid: 173baee604f2147f284a1693caa017d1, type: 2}
+      - {fileID: 11400000, guid: 173baee604f2147f284a1693caa017d1, type: 2}
+      - {fileID: 11400000, guid: 173baee604f2147f284a1693caa017d1, type: 2}
+      - {fileID: 11400000, guid: 173baee604f2147f284a1693caa017d1, type: 2}
+      - {fileID: 11400000, guid: 173baee604f2147f284a1693caa017d1, type: 2}
+    - SpawnTime: 0
+      DefRail: 2
+      DefAngle: 155
+      MoveSpeed: -50
+      EnemyType: 1
+      EnemyList:
+      - {fileID: 11400000, guid: 173baee604f2147f284a1693caa017d1, type: 2}
+      - {fileID: 11400000, guid: 173baee604f2147f284a1693caa017d1, type: 2}
+      - {fileID: 11400000, guid: 173baee604f2147f284a1693caa017d1, type: 2}
+    - SpawnTime: 0
+      DefRail: 1
+      DefAngle: 201
+      MoveSpeed: 30
+      EnemyType: 1
+      EnemyList:
+      - {fileID: 11400000, guid: ee65009c301ca461e82bc61afaec762f, type: 2}
+      - {fileID: 11400000, guid: ee65009c301ca461e82bc61afaec762f, type: 2}
+      - {fileID: 11400000, guid: ee65009c301ca461e82bc61afaec762f, type: 2}
+    - SpawnTime: 0
+      DefRail: 3
+      DefAngle: 180
+      MoveSpeed: -170
+      EnemyType: 1
+      EnemyList:
+      - {fileID: 11400000, guid: 3b3df7fc4d78645f0b32816ca90f4ea7, type: 2}
+      - {fileID: 11400000, guid: 3b3df7fc4d78645f0b32816ca90f4ea7, type: 2}
+      - {fileID: 11400000, guid: 3b3df7fc4d78645f0b32816ca90f4ea7, type: 2}
+      - {fileID: 11400000, guid: 3b3df7fc4d78645f0b32816ca90f4ea7, type: 2}
+    - SpawnTime: 0
+      DefRail: 0
+      DefAngle: 60
+      MoveSpeed: 200
+      EnemyType: 1
+      EnemyList:
+      - {fileID: 11400000, guid: ee65009c301ca461e82bc61afaec762f, type: 2}
+      - {fileID: 11400000, guid: 173baee604f2147f284a1693caa017d1, type: 2}
+      - {fileID: 11400000, guid: 5387f09a8d34e4d0ba25db81a0b9e7ba, type: 2}
+      - {fileID: 11400000, guid: 87b1687e4ebee4892b3e6ef5bff72534, type: 2}
+      - {fileID: 11400000, guid: 2de5052450d9b4557a784f4fecaded00, type: 2}
+      - {fileID: 11400000, guid: 87b1687e4ebee4892b3e6ef5bff72534, type: 2}
+      - {fileID: 11400000, guid: 2de5052450d9b4557a784f4fecaded00, type: 2}
+      - {fileID: 11400000, guid: 87b1687e4ebee4892b3e6ef5bff72534, type: 2}
+      - {fileID: 11400000, guid: 2de5052450d9b4557a784f4fecaded00, type: 2}
+      - {fileID: 11400000, guid: 87b1687e4ebee4892b3e6ef5bff72534, type: 2}
+      - {fileID: 11400000, guid: 2de5052450d9b4557a784f4fecaded00, type: 2}
+      - {fileID: 11400000, guid: 87b1687e4ebee4892b3e6ef5bff72534, type: 2}
+      - {fileID: 11400000, guid: ee65009c301ca461e82bc61afaec762f, type: 2}
+      - {fileID: 11400000, guid: 173baee604f2147f284a1693caa017d1, type: 2}
+    - SpawnTime: 0
+      DefRail: 4
+      DefAngle: 270
+      MoveSpeed: 150
+      EnemyType: 0
+      EnemyList:
+      - {fileID: 11400000, guid: 87b1687e4ebee4892b3e6ef5bff72534, type: 2}
+    - SpawnTime: 0
+      DefRail: 4
+      DefAngle: 260
+      MoveSpeed: 150
+      EnemyType: 0
+      EnemyList:
+      - {fileID: 11400000, guid: 87b1687e4ebee4892b3e6ef5bff72534, type: 2}
+    - SpawnTime: 0
+      DefRail: 4
+      DefAngle: 250
+      MoveSpeed: 150
+      EnemyType: 0
+      EnemyList:
+      - {fileID: 11400000, guid: 87b1687e4ebee4892b3e6ef5bff72534, type: 2}
+    - SpawnTime: 0
+      DefRail: 4
+      DefAngle: 240
+      MoveSpeed: 150
+      EnemyType: 0
+      EnemyList:
+      - {fileID: 11400000, guid: 87b1687e4ebee4892b3e6ef5bff72534, type: 2}
+  - Rails: 5
+    EnemySpawnList:
+    - SpawnTime: 0
+      DefRail: 0
+      DefAngle: 0
+      MoveSpeed: 0
+      EnemyType: 2
+      EnemyList:
+      - {fileID: 11400000, guid: 7457a18b5316f3f439a507fc327ee9f6, type: 2}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1

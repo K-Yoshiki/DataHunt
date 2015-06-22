@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: SampleBattleData
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c4ef05ab507f4f87adc9c8441828cec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StageName: Sample Stage
+  LevelName: Sample Level
+  StageBGM: {fileID: 8300000, guid: 8e7257c58fe5f471c9d52f45e82ad99d, type: 3}
+  BossBGM: {fileID: 8300000, guid: fed8affa9652e43118b5f173e40595a3, type: 3}
+  FieldDropTable:
+    dropPercent: 50
+    dropDataTable:
+    - itemID: 0
+      selectPercent: 100
+  BossDropTable:
+    dropPercent: 100
+    dropDataTable:
+    - itemID: 0
+      selectPercent: 100
+  PhaseList:
+  - Rails: 4
+    EnemySpawnList:
+    - SpawnTime: 0
+      DefRail: 1
+      DefAngle: 0
+      MoveSpeed: 20
+      EnemyType: 1
+      EnemyList:
+      - {fileID: 11400000, guid: 7d254d0544a254b2ab75f070236ceb9e, type: 2}
+      - {fileID: 11400000, guid: 7d254d0544a254b2ab75f070236ceb9e, type: 2}
+      - {fileID: 11400000, guid: 7d254d0544a254b2ab75f070236ceb9e, type: 2}
+      - {fileID: 11400000, guid: 7d254d0544a254b2ab75f070236ceb9e, type: 2}
+      - {fileID: 11400000, guid: 7d254d0544a254b2ab75f070236ceb9e, type: 2}
+      - {fileID: 11400000, guid: 7d254d0544a254b2ab75f070236ceb9e, type: 2}
+      - {fileID: 11400000, guid: 7d254d0544a254b2ab75f070236ceb9e, type: 2}
+    - SpawnTime: 1
+      DefRail: 2
+      DefAngle: 0
+      MoveSpeed: 140
+      EnemyType: 0
+      EnemyList:
+      - {fileID: 11400000, guid: 7d254d0544a254b2ab75f070236ceb9e, type: 2}
+    - SpawnTime: 5
+      DefRail: 3
+      DefAngle: 180
+      MoveSpeed: 30
+      EnemyType: 0
+      EnemyList:
+      - {fileID: 11400000, guid: 7d254d0544a254b2ab75f070236ceb9e, type: 2}
+  - Rails: 3
+    EnemySpawnList:
+    - SpawnTime: 0
+      DefRail: 0
+      DefAngle: 0
+      MoveSpeed: 0
+      EnemyType: 0
+      EnemyList:
+      - {fileID: 11400000, guid: 809b2a004e88c77489aed7e95072ab6f, type: 2}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1

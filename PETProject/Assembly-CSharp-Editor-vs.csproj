@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{0306F47A-7D91-83E0-353D-B78E29A84567}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp-Editor</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_6_0;UNITY_4_6;UNITY_IPHONE;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_WWW;ENABLE_IMAGEEFFECTS;UNITY_IPHONE_API;ENABLE_4_6_FEATURES;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_GAMECENTER;UNITY_IOS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_OSX;ENABLE_DUCK_TYPING</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>/Applications/Unity4/Unity4.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>/Applications/Unity4/Unity4.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Battle\BattleCommon\BattleData\Editor\BattleDataDrawer.cs" />
+     <Compile Include="Assets\Battle\BattleCommon\BattleData\Editor\BattleDataEditWindow.cs" />
+     <Compile Include="Assets\Battle\BattleCommon\BattleData\Editor\DropTableEditWindow.cs" />
+     <Compile Include="Assets\Battle\BattleCommon\BattleNames\Editor\BattleNamesDrawer.cs" />
+     <Compile Include="Assets\Battle\BattleCommon\BattleNames\Editor\BattleNamesEditWindow.cs" />
+     <Compile Include="Assets\Battle\Item\ItemTable\Editor\ItemTableEditor.cs" />
+     <Compile Include="Assets\Common\AppUtilsEditor\Editor\EditorWindowUtility.cs" />
+     <Compile Include="Assets\Common\AppUtilsEditor\Editor\ScriptableAssetCreator.cs" />
+     <Compile Include="Assets\Common\AttachedTween\Editor\AttachedTweenEditor.cs" />
+     <Compile Include="Assets\Common\CSWTools\SpritePacker\Editor\SpritePackerWindow.cs" />
+     <Compile Include="Assets\Common\ExcelImporter\Editor\ExcelImporterMaker.cs" />
+     <Compile Include="Assets\Common\UnityUtilityExtension\InspectorButton\Editor\InspectorButtonDrawer.cs" />
+     <Compile Include="Assets\Common\UnityUtilityExtension\PrefabExtension\Editor\OnlyPrefabDrawer.cs" />
+     <Compile Include="Assets\Common\UnityUtilityExtension\TransformExtension\Editor\TFInspectorExtension.cs" />
+     <Compile Include="Assets\Common\UserData\Editor\UserDataDebugWindow.cs" />
+     <Compile Include="Assets\Hayate\Editor\HayateEditor.cs" />
+     <Compile Include="Assets\ProCore\Prototype\Editor\MenuItems\Actions\DeleteNoDrawFaces.cs" />
+     <Compile Include="Assets\ProCore\Prototype\Editor\MenuItems\Actions\ExportObj.cs" />
+     <Compile Include="Assets\ProCore\Prototype\Editor\MenuItems\Actions\MakeAsset.cs" />
+     <Compile Include="Assets\ProCore\Prototype\Editor\MenuItems\Actions\ProBuilderizeGameObject.cs" />
+     <Compile Include="Assets\ProCore\Prototype\Editor\MenuItems\Actions\StripProBuilderScripts.cs" />
+     <Compile Include="Assets\ProCore\Prototype\Editor\MenuItems\Geometry\DetachDeleteFace.cs" />
+     <Compile Include="Assets\ProCore\Prototype\Editor\MenuItems\Geometry\ExtrudeFace.cs" />
+     <Compile Include="Assets\ProCore\Prototype\Editor\MenuItems\Geometry\FlipFaces.cs" />
+     <Compile Include="Assets\ProCore\Prototype\Editor\MenuItems\Geometry\PivotTool.cs" />
+     <Compile Include="Assets\ProCore\Prototype\Editor\MenuItems\Repair\CleanUpLeakedMeshes.cs" />
+     <Compile Include="Assets\ProCore\Prototype\Editor\MenuItems\Repair\ComponentCheck.cs" />
+     <Compile Include="Assets\ProCore\Prototype\Editor\MenuItems\Repair\DegenerateTris.cs" />
+     <Compile Include="Assets\ProCore\Prototype\Editor\MenuItems\Repair\FixGameObjectFlags.cs" />
+     <Compile Include="Assets\ProCore\Prototype\Editor\MenuItems\Repair\FixShaderWantsNormals.cs" />
+     <Compile Include="Assets\ProCore\Prototype\Editor\MenuItems\Repair\ForceMakeUnique.cs" />
+     <Compile Include="Assets\ProCore\Prototype\Editor\MenuItems\Repair\ForceMeshRefresh.cs" />
+     <Compile Include="Assets\ProCore\Prototype\Editor\MenuItems\Repair\RebuildSharedIndices.cs" />
+     <Compile Include="Assets\ProCore\Prototype\Editor\MenuItems\Repair\RebuildVertexCaches.cs" />
+     <Compile Include="Assets\ProCore\Prototype\Editor\MenuItems\Selection\EdgeSelection.cs" />
+     <Compile Include="Assets\ProCore\Prototype\Editor\MenuItems\Selection\ExpandSelection.cs" />
+     <Compile Include="Assets\ProCore\Prototype\Editor\MenuItems\Selection\InvertSelection.cs" />
+     <Compile Include="Assets\ProCore\Prototype\Editor\MenuItems\Selection\MaterialSelection.cs" />
+     <Compile Include="Assets\ProCore\Prototype\Editor\ProBuilderMenuItems.cs" />
+     <Compile Include="Assets\ProCore\Prototype\Editor\pb_Preferences.cs" />
+     <Compile Include="Assets\ProCore\Shared\About\Editor\pc_AboutWindow.cs" />
+     <None Include="Assets\Common\Shaders\RimLight\Rim.shader" />
+     <None Include="Assets\ProCore\Prototype\Shader\VertexBillboard.shader" />
+     <None Include="Assets\ProCore\Prototype\Shader\DiffuseVertexColor.shader" />
+     <None Include="Assets\Common\Shaders\Bloom\PostProcesses2.0\Shafts\AdditiveRadialBlur_20.shader" />
+     <None Include="Assets\ProCore\Shared\About\README.txt" />
+     <None Include="Assets\Common\Shaders\GodRays(Texrture)\GodRays.shader" />
+     <None Include="Assets\Common\Shaders\Fresnel\Fresnel.shader" />
+     <None Include="Assets\ProCore\Prototype\Shader\DiffuseVertexColorTransparency.shader" />
+     <None Include="Assets\Common\Shaders\Bloom\PostProcesses2.0\Shafts\AdditiveRadialBlur_10.shader" />
+     <None Include="Assets\Common\Shaders\RimLight\RimLight HeightMap.shader" />
+     <None Include="Assets\Common\Shaders\Outline\OutLine-Base.shader" />
+     <None Include="Assets\Common\Shaders\Bloom\PostProcesses2.0\Bloom\AdditiveBlur.shader" />
+     <None Include="Assets\Common\Shaders\Outline\MaterialSurface.cginc" />
+     <None Include="Assets\Common\Shaders\Outline\OutLine.shader" />
+     <None Include="Assets\Common\Shaders\Fresnel\Fresnel_Texture.shader" />
+     <None Include="Assets\ProCore\Prototype\Shader\UnlitColor.shader" />
+     <None Include="Assets\Common\ExcelImporter\Editor\ExportTemplate.txt" />
+     <None Include="Assets\Common\ExcelImporter\Editor\ExportTemplate2.txt" />
+     <None Include="Assets\Common\ExcelImporter\Editor\EntityTemplate.txt" />
+     <None Include="Assets\Common\ExcelImporter\Editor\EntityTemplate2.txt" />
+     <None Include="Assets\ProCore\Prototype\Shader\UnlitColor-Overlay.shader" />
+     <None Include="Assets\Common\Shaders\Bloom\PostProcesses2.0\Shafts\AdditiveRadialBlur_30.shader" />
+     <None Include="Assets\ProCore\Prototype\Shader\DiffuseVertexColorEmission.shader" />
+     <None Include="Assets\Common\Shaders\Bloom\PostProcesses2.0\Shafts\AdditiveRadialBlur_40.shader" />
+     <None Include="Assets\Common\Shaders\Mask\Mask.shader" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity4/Unity4.app/Contents/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UI">
+ <HintPath>/Applications/Unity4/Unity4.app/Contents/UnityExtensions/Unity/GUISystem/4.6.0/Editor/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="NPOI">
+ <HintPath>/Users/yoshikikanai/PET/PETProject/Assets/Common/ExcelImporter/Editor/npoi/NPOI.dll</HintPath>
+ </Reference>
+ <Reference Include="Hayate">
+ <HintPath>/Users/yoshikikanai/PET/PETProject/Assets/Hayate/Hayate.dll</HintPath>
+ </Reference>
+ <Reference Include="ProBuilderCore">
+ <HintPath>/Users/yoshikikanai/PET/PETProject/Assets/ProCore/Prototype/Classes/ProBuilderCore.dll</HintPath>
+ </Reference>
+ <Reference Include="ProBuilderMeshOps">
+ <HintPath>/Users/yoshikikanai/PET/PETProject/Assets/ProCore/Prototype/Classes/ProBuilderMeshOps.dll</HintPath>
+ </Reference>
+ <Reference Include="ProBuilderEditor">
+ <HintPath>/Users/yoshikikanai/PET/PETProject/Assets/ProCore/Prototype/Editor/ProBuilderEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="ProCore">
+ <HintPath>/Users/yoshikikanai/PET/PETProject/Assets/ProCore/Shared/Code/ProCore.dll</HintPath>
+ </Reference>
+ <Reference Include="SixBySeven">
+ <HintPath>/Users/yoshikikanai/PET/PETProject/Assets/ProCore/Shared/Code/SixBySeven.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>/Applications/Unity4/Unity4.app/Contents/Frameworks/Managed/UnityEditor.Graphs.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-vs.csproj">
+      <Project>{4E3B6B78-6C51-1A0A-E2F0-8EF73ED36051}</Project>      <Name>Assembly-CSharp-vs</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

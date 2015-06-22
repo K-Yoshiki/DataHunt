@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{4E3B6B78-6C51-1A0A-E2F0-8EF73ED36051}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_6_0;UNITY_4_6;UNITY_IPHONE;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_WWW;ENABLE_IMAGEEFFECTS;UNITY_IPHONE_API;ENABLE_4_6_FEATURES;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_GAMECENTER;UNITY_IOS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_OSX</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>/Applications/Unity4/Unity4.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>/Applications/Unity4/Unity4.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Battle\BattleCommon\BattleCanvas\BattleUI.cs" />
+     <Compile Include="Assets\Battle\BattleCommon\BattleCanvas\BossHPScreen\BossHPScreen.cs" />
+     <Compile Include="Assets\Battle\BattleCommon\BattleCanvas\ChangeLabel\Scripts\NormalPhase.cs" />
+     <Compile Include="Assets\Battle\BattleCommon\BattleCanvas\ChangeLabel\Scripts\PhaseLabel.cs" />
+     <Compile Include="Assets\Battle\BattleCommon\BattleCanvas\ChangeLabel\Scripts\PhaseLabelController.cs" />
+     <Compile Include="Assets\Battle\BattleCommon\BattleCanvas\GameOverScreen\GameOverButton.cs" />
+     <Compile Include="Assets\Battle\BattleCommon\BattleCanvas\GameOverScreen\GameOverScreen.cs" />
+     <Compile Include="Assets\Battle\BattleCommon\BattleCanvas\ResultScreen\GetPartsView.cs" />
+     <Compile Include="Assets\Battle\BattleCommon\BattleCanvas\ResultScreen\ResultScreen.cs" />
+     <Compile Include="Assets\Battle\BattleCommon\BattleData\BattleData.cs" />
+     <Compile Include="Assets\Battle\BattleCommon\BattleDataLoader\BattleDataLoader.cs" />
+     <Compile Include="Assets\Battle\BattleCommon\BattleNames\BattleNames.cs" />
+     <Compile Include="Assets\Battle\BattleCommon\BattlePhase\BattlePhaseCycle.cs" />
+     <Compile Include="Assets\Battle\BattleCommon\BattlePhase\BattlePhaseType.cs" />
+     <Compile Include="Assets\Battle\BattleCommon\BattlePhase\PhaseClasses\BattleEndPhase.cs" />
+     <Compile Include="Assets\Battle\BattleCommon\BattlePhase\PhaseClasses\BattlePhase.cs" />
+     <Compile Include="Assets\Battle\BattleCommon\BattlePhase\PhaseClasses\ChangePhase.cs" />
+     <Compile Include="Assets\Battle\BattleCommon\BattlePhase\PhaseClasses\GameOverPhase.cs" />
+     <Compile Include="Assets\Battle\BattleCommon\BattlePhase\PhaseClasses\ResultPhase.cs" />
+     <Compile Include="Assets\Battle\BattleCommon\BattleRecord\BattleRecord.cs" />
+     <Compile Include="Assets\Battle\BattleCommon\BattleRecord\BattleScore.cs" />
+     <Compile Include="Assets\Battle\BattleCommon\CharaBase.cs" />
+     <Compile Include="Assets\Battle\BattleCommon\EnemyData\EnemyData.cs" />
+     <Compile Include="Assets\Battle\BattleCommon\Managers\Scripts\BattleManager.cs" />
+     <Compile Include="Assets\Battle\BattleCommon\Managers\Scripts\BattleSound.cs" />
+     <Compile Include="Assets\Battle\Bullet_and_Effect\Script\Base\BulletBase.cs" />
+     <Compile Include="Assets\Battle\Bullet_and_Effect\Script\Base\EffectBase.cs" />
+     <Compile Include="Assets\Battle\Bullet_and_Effect\Script\Base\ShooterBase.cs" />
+     <Compile Include="Assets\Battle\Bullet_and_Effect\Script\Bullet\HomingBullet.cs" />
+     <Compile Include="Assets\Battle\Bullet_and_Effect\Script\Bullet\Laser.cs" />
+     <Compile Include="Assets\Battle\Bullet_and_Effect\Script\Bullet\NormalBullet.cs" />
+     <Compile Include="Assets\Battle\Bullet_and_Effect\Script\Shooter\LaserShooter.cs" />
+     <Compile Include="Assets\Battle\Bullet_and_Effect\Script\Shooter\MultiShooter.cs" />
+     <Compile Include="Assets\Battle\Bullet_and_Effect\Script\Shooter\NormalShooter.cs" />
+     <Compile Include="Assets\Battle\Enemy\Scripts\Base\EnemyBase.cs" />
+     <Compile Include="Assets\Battle\Enemy\Scripts\Base\EnemyType.cs" />
+     <Compile Include="Assets\Battle\Enemy\Scripts\Boss\Boss.cs" />
+     <Compile Include="Assets\Battle\Enemy\Scripts\Enemy\LesserEnemy.cs" />
+     <Compile Include="Assets\Battle\Enemy\Scripts\Manager\EnemiesGenerator.cs" />
+     <Compile Include="Assets\Battle\Enemy\Scripts\Manager\EnemiesManager.cs" />
+     <Compile Include="Assets\Battle\Field\_Scripts\CenterHole\CenterHole.cs" />
+     <Compile Include="Assets\Battle\Field\_Scripts\CenterHole\CenterHoleAnimation.cs" />
+     <Compile Include="Assets\Battle\Field\_Scripts\CenterHole\CenterHoleColorChanger.cs" />
+     <Compile Include="Assets\Battle\Field\_Scripts\Rail\RailAnimation.cs" />
+     <Compile Include="Assets\Battle\Field\_Scripts\Rail\RailController.cs" />
+     <Compile Include="Assets\Battle\Field\_Scripts\Skybox\SkyboxAnimation.cs" />
+     <Compile Include="Assets\Battle\Field\_Scripts\Skybox\SkyboxController.cs" />
+     <Compile Include="Assets\Battle\Field\_Scripts\_Manager\FieldManager.cs" />
+     <Compile Include="Assets\Battle\Item\Data\ItemData.cs" />
+     <Compile Include="Assets\Battle\Item\ItemParticle\ItemParticle.cs" />
+     <Compile Include="Assets\Battle\Item\ItemTable\ItemTable.cs" />
+     <Compile Include="Assets\Battle\Item\Loader\ItemDataLoader.cs" />
+     <Compile Include="Assets\Battle\Player\Player.cs" />
+     <Compile Include="Assets\Battle\Player\PlayerCamera.cs" />
+     <Compile Include="Assets\Battle\Player\PlayerController.cs" />
+     <Compile Include="Assets\Battle\Player\PlayerRotater.cs" />
+     <Compile Include="Assets\Battle\Player\RailChanger.cs" />
+     <Compile Include="Assets\Common\AppUtils\DropChoose\DropChoose.cs" />
+     <Compile Include="Assets\Common\AppUtils\Extension\TransformEx.cs" />
+     <Compile Include="Assets\Common\AppUtils\SaveDataFiler\SaveDataFiler.cs" />
+     <Compile Include="Assets\Common\AppUtils\Singleton\UnitySingleton.cs" />
+     <Compile Include="Assets\Common\AppUtils\Sound\Players\BGMPlayer\AudioData.cs" />
+     <Compile Include="Assets\Common\AppUtils\Sound\Players\BGMPlayer\BGMPlayer.cs" />
+     <Compile Include="Assets\Common\AppUtils\Sound\Players\BGMPlayer\_BGMState\CrossFade.cs" />
+     <Compile Include="Assets\Common\AppUtils\Sound\Players\BGMPlayer\_BGMState\FadeIn.cs" />
+     <Compile Include="Assets\Common\AppUtils\Sound\Players\BGMPlayer\_BGMState\FadeOut.cs" />
+     <Compile Include="Assets\Common\AppUtils\Sound\Players\BGMPlayer\_BGMState\Pause.cs" />
+     <Compile Include="Assets\Common\AppUtils\Sound\Players\BGMPlayer\_BGMState\Play.cs" />
+     <Compile Include="Assets\Common\AppUtils\Sound\Players\BGMPlayer\_BGMState\Stop.cs" />
+     <Compile Include="Assets\Common\AppUtils\Sound\Players\SEPlayer.cs" />
+     <Compile Include="Assets\Common\AppUtils\Sound\Sound.cs" />
+     <Compile Include="Assets\Common\AppUtils\Sound\SoundVolume.cs" />
+     <Compile Include="Assets\Common\AppUtils\StateMachine\IState.cs" />
+     <Compile Include="Assets\Common\AppUtils\StateMachine\StateMachine.cs" />
+     <Compile Include="Assets\Common\AppUtils\XmlSerializeHelper\XmlSerializeHelper.cs" />
+     <Compile Include="Assets\Common\AttachedTween\AttachedTween.cs" />
+     <Compile Include="Assets\Common\AttachedTween\Plugins\iTween.cs" />
+     <Compile Include="Assets\Common\BGMSound.cs" />
+     <Compile Include="Assets\Common\Bezier.cs" />
+     <Compile Include="Assets\Common\Billboard.cs" />
+     <Compile Include="Assets\Common\ButtonSound.cs" />
+     <Compile Include="Assets\Common\Fade\Fade.cs" />
+     <Compile Include="Assets\Common\Fade\FadeScreen.cs" />
+     <Compile Include="Assets\Common\FpsSetting\FramePerSecondSetting.cs" />
+     <Compile Include="Assets\Common\MeshCombiner.cs" />
+     <Compile Include="Assets\Common\PlayerParts\Scripts\PartsConnector.cs" />
+     <Compile Include="Assets\Common\PlayerParts\Scripts\PartsLoader.cs" />
+     <Compile Include="Assets\Common\PlayerParts\Scripts\PlayerParts.cs" />
+     <Compile Include="Assets\Common\PlayerParts\Scripts\PlayerPartsTest.cs" />
+     <Compile Include="Assets\Common\SceneManager\IStateClasses\BattleState.cs" />
+     <Compile Include="Assets\Common\SceneManager\IStateClasses\CreditState.cs" />
+     <Compile Include="Assets\Common\SceneManager\IStateClasses\HomeState.cs" />
+     <Compile Include="Assets\Common\SceneManager\IStateClasses\LabState.cs" />
+     <Compile Include="Assets\Common\SceneManager\IStateClasses\LoadingState.cs" />
+     <Compile Include="Assets\Common\SceneManager\IStateClasses\SoundTestState.cs" />
+     <Compile Include="Assets\Common\SceneManager\IStateClasses\StartState.cs" />
+     <Compile Include="Assets\Common\SceneManager\IStateClasses\TitleState.cs" />
+     <Compile Include="Assets\Common\SceneManager\SceneManager.cs" />
+     <Compile Include="Assets\Common\SceneManager\StateDebug.cs" />
+     <Compile Include="Assets\Common\Shaders\Bloom\PostProcesses2.0\Bloom\BloomObject.cs" />
+     <Compile Include="Assets\Common\Shaders\Bloom\PostProcesses2.0\Bloom\MyBloom.cs" />
+     <Compile Include="Assets\Common\Shaders\Bloom\PostProcesses2.0\Shafts\Shafts.cs" />
+     <Compile Include="Assets\Common\SpriteEffect.cs" />
+     <Compile Include="Assets\Common\Tag.cs" />
+     <Compile Include="Assets\Common\TouchCensor\TouchSensor.cs" />
+     <Compile Include="Assets\Common\UnityUtilityExtension\EnumEx\EnumEx.cs" />
+     <Compile Include="Assets\Common\UnityUtilityExtension\InspectorButton\InspecterButton.cs" />
+     <Compile Include="Assets\Common\UnityUtilityExtension\OnEvent\AwakeEventer.cs" />
+     <Compile Include="Assets\Common\UnityUtilityExtension\OnEvent\OnEnableEventer.cs" />
+     <Compile Include="Assets\Common\UnityUtilityExtension\PrefabExtension\OnlyPrefab.cs" />
+     <Compile Include="Assets\Common\UnityUtilityExtension\SingletonScript\MonoSingleton.cs" />
+     <Compile Include="Assets\Common\UnityUtilityExtension\StateMachine\IState.cs" />
+     <Compile Include="Assets\Common\UnityUtilityExtension\StateMachine\StateMachine.cs" />
+     <Compile Include="Assets\Common\UnityUtilityExtension\TransformExtension\PosExtension.cs" />
+     <Compile Include="Assets\Common\UnityUtilityExtension\TransformExtension\RotExtension.cs" />
+     <Compile Include="Assets\Common\UnityUtilityExtension\TransformExtension\SclExtension.cs" />
+     <Compile Include="Assets\Common\UserData\UserData.cs" />
+     <Compile Include="Assets\Common\UserData\UserDataControl.cs" />
+     <Compile Include="Assets\Home\Script\BGMSlider.cs" />
+     <Compile Include="Assets\Home\Script\HomeBGM.cs" />
+     <Compile Include="Assets\Home\Script\HomePET.cs" />
+     <Compile Include="Assets\Home\Script\HomeUIManager.cs" />
+     <Compile Include="Assets\Home\Script\SESlider.cs" />
+     <Compile Include="Assets\Home\Script\SaveSetting.cs" />
+     <Compile Include="Assets\Home\Script\SelectableRing.cs" />
+     <Compile Include="Assets\Home\Script\SelectableRingController.cs" />
+     <Compile Include="Assets\Lab\Scripts\GridFlexiblePanel.cs" />
+     <Compile Include="Assets\Lab\Scripts\LabBGM.cs" />
+     <Compile Include="Assets\Lab\Scripts\LabManager.cs" />
+     <Compile Include="Assets\Lab\Scripts\LabPartsButton.cs" />
+     <Compile Include="Assets\Lab\Scripts\LabPartsListPanel.cs" />
+     <Compile Include="Assets\Lab\Scripts\LabPet.cs" />
+     <Compile Include="Assets\Lab\Scripts\LabPetCamera.cs" />
+     <Compile Include="Assets\Lab\Scripts\LabUI.cs" />
+     <Compile Include="Assets\Lab\Scripts\PartsSetPoint.cs" />
+     <Compile Include="Assets\Lab\Scripts\TextureAnim.cs" />
+     <Compile Include="Assets\ProCore\Prototype\Scripts\RebuildMeshOnWake.cs" />
+     <Compile Include="Assets\SoundTest\Script\SoundPanel.cs" />
+     <Compile Include="Assets\SoundTest\Script\SoundTest.cs" />
+     <Compile Include="Assets\Start\StartManager.cs" />
+     <Compile Include="Assets\Title\TitleManager.cs" />
+     <Compile Include="Assets\_Folder_KY\SaveFilerTest.cs" />
+     <Compile Include="Assets\_Folder_Wada\Scripts\CreditController.cs" />
+     <Compile Include="Assets\_Folder_Wada\Scripts\DestoyItem.cs" />
+     <Compile Include="Assets\_Folder_Wada\Scripts\Hit.cs" />
+     <Compile Include="Assets\_Folder_Wada\Scripts\ImageController.cs" />
+     <Compile Include="Assets\_Folder_Wada\Scripts\LabScene.cs" />
+     <Compile Include="Assets\_Folder_Wada\Scripts\LevelButton.cs" />
+     <Compile Include="Assets\_Folder_Wada\Scripts\MouseEffect.cs" />
+     <Compile Include="Assets\_Folder_Wada\Scripts\RingRotate.cs" />
+     <Compile Include="Assets\_Folder_Wada\Scripts\ScreenRacaster.cs" />
+     <Compile Include="Assets\_Folder_Wada\Scripts\ScrollPanel.cs" />
+     <Compile Include="Assets\_Folder_Wada\Scripts\SoundScene.cs" />
+     <Compile Include="Assets\_Folder_Wada\Scripts\SoundTestBgm.cs" />
+     <Compile Include="Assets\_Folder_Wada\Scripts\StageButton.cs" />
+     <Compile Include="Assets\_Folder_Wada\Scripts\TextController.cs" />
+     <Compile Include="Assets\_Folder_Wada\Scripts\UndoButton.cs" />
+     <Compile Include="Assets\_Folder_imatoku\Gimmick\GimmickBase.cs" />
+     <Compile Include="Assets\_Folder_imatoku\Gimmick\SpeedDown.cs" />
+     <Compile Include="Assets\_Folder_imatoku\Particle\Laser_Scale_Cont.cs" />
+     <Compile Include="Assets\x_NotUse_DontDelete\Scripts\BGMFadeIn.cs" />
+     <Compile Include="Assets\x_NotUse_DontDelete\Scripts\BGMFadeOut.cs" />
+     <Compile Include="Assets\x_NotUse_DontDelete\Scripts\BGMPause.cs" />
+     <Compile Include="Assets\x_NotUse_DontDelete\Scripts\BGMPlay.cs" />
+     <Compile Include="Assets\x_NotUse_DontDelete\Scripts\BGMPlayer.cs" />
+     <Compile Include="Assets\x_NotUse_DontDelete\Scripts\BGMStop.cs" />
+     <Compile Include="Assets\x_NotUse_DontDelete\Scripts\EnemyManager.cs" />
+     <Compile Include="Assets\x_NotUse_DontDelete\Scripts\MediumBoss.cs" />
+     <Compile Include="Assets\x_NotUse_DontDelete\Scripts\MediumBossChildController.cs" />
+     <Compile Include="Assets\x_NotUse_DontDelete\Scripts\PartsCreate.cs" />
+     <Compile Include="Assets\x_NotUse_DontDelete\Scripts\SEPlayer.cs" />
+     <Compile Include="Assets\x_NotUse_DontDelete\Scripts\SoundSE.cs" />
+     <Compile Include="Assets\x_NotUse_DontDelete\Scripts\SubCore.cs" />
+     <Compile Include="Assets\x_NotUse_DontDelete\Scripts\TestContBGM.cs" />
+     <Compile Include="Assets\x_NotUse_DontDelete\SolorSystem\Scripts\CameraChange.cs" />
+     <Compile Include="Assets\x_NotUse_DontDelete\SolorSystem\Scripts\MoonRotate.cs" />
+     <Compile Include="Assets\x_NotUse_DontDelete\SolorSystem\Scripts\PlanetRotate.cs" />
+     <Compile Include="Assets\x_NotUse_DontDelete\TestLoadBattleNames.cs" />
+     <Compile Include="Assets\x_NotUse_DontDelete\_Folder_y\ExButton.cs" />
+     <Compile Include="Assets\x_NotUse_DontDelete\_Folder_y\TmpHome_AutoRotate.cs" />
+     <Compile Include="Assets\x_NotUse_DontDelete\_Folder_y\TmpHome_UIManager.cs" />
+     <None Include="Assets\Common\Shaders\RimLight\Rim.shader" />
+     <None Include="Assets\ProCore\Prototype\Shader\VertexBillboard.shader" />
+     <None Include="Assets\ProCore\Prototype\Shader\DiffuseVertexColor.shader" />
+     <None Include="Assets\Common\Shaders\Bloom\PostProcesses2.0\Shafts\AdditiveRadialBlur_20.shader" />
+     <None Include="Assets\ProCore\Shared\About\README.txt" />
+     <None Include="Assets\Common\Shaders\GodRays(Texrture)\GodRays.shader" />
+     <None Include="Assets\Common\Shaders\Fresnel\Fresnel.shader" />
+     <None Include="Assets\ProCore\Prototype\Shader\DiffuseVertexColorTransparency.shader" />
+     <None Include="Assets\Common\Shaders\Bloom\PostProcesses2.0\Shafts\AdditiveRadialBlur_10.shader" />
+     <None Include="Assets\Common\Shaders\RimLight\RimLight HeightMap.shader" />
+     <None Include="Assets\Common\Shaders\Outline\OutLine-Base.shader" />
+     <None Include="Assets\Common\Shaders\Bloom\PostProcesses2.0\Bloom\AdditiveBlur.shader" />
+     <None Include="Assets\Common\Shaders\Outline\MaterialSurface.cginc" />
+     <None Include="Assets\Common\Shaders\Outline\OutLine.shader" />
+     <None Include="Assets\Common\Shaders\Fresnel\Fresnel_Texture.shader" />
+     <None Include="Assets\ProCore\Prototype\Shader\UnlitColor.shader" />
+     <None Include="Assets\Common\ExcelImporter\Editor\ExportTemplate.txt" />
+     <None Include="Assets\Common\ExcelImporter\Editor\ExportTemplate2.txt" />
+     <None Include="Assets\Common\ExcelImporter\Editor\EntityTemplate.txt" />
+     <None Include="Assets\Common\ExcelImporter\Editor\EntityTemplate2.txt" />
+     <None Include="Assets\ProCore\Prototype\Shader\UnlitColor-Overlay.shader" />
+     <None Include="Assets\Common\Shaders\Bloom\PostProcesses2.0\Shafts\AdditiveRadialBlur_30.shader" />
+     <None Include="Assets\ProCore\Prototype\Shader\DiffuseVertexColorEmission.shader" />
+     <None Include="Assets\Common\Shaders\Bloom\PostProcesses2.0\Shafts\AdditiveRadialBlur_40.shader" />
+     <None Include="Assets\Common\Shaders\Mask\Mask.shader" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity4/Unity4.app/Contents/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="Hayate">
+ <HintPath>/Users/yoshikikanai/PET/PETProject/Assets/Hayate/Hayate.dll</HintPath>
+ </Reference>
+ <Reference Include="ProBuilderCore">
+ <HintPath>/Users/yoshikikanai/PET/PETProject/Assets/ProCore/Prototype/Classes/ProBuilderCore.dll</HintPath>
+ </Reference>
+ <Reference Include="ProBuilderMeshOps">
+ <HintPath>/Users/yoshikikanai/PET/PETProject/Assets/ProCore/Prototype/Classes/ProBuilderMeshOps.dll</HintPath>
+ </Reference>
+ <Reference Include="ProCore">
+ <HintPath>/Users/yoshikikanai/PET/PETProject/Assets/ProCore/Shared/Code/ProCore.dll</HintPath>
+ </Reference>
+ <Reference Include="SixBySeven">
+ <HintPath>/Users/yoshikikanai/PET/PETProject/Assets/ProCore/Shared/Code/SixBySeven.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

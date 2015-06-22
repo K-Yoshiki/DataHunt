@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Shafts
+  m_Shader: {fileID: 4800000, guid: c1266e22705135b41a06b727b3a14436, type: 3}
+  m_ShaderKeywords: []
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _InvFade
+        second: .00999999978
+      data:
+        first:
+          name: _CenX
+        second: .5
+      data:
+        first:
+          name: _CenY
+        second: .5
+      data:
+        first:
+          name: _SDist
+        second: .0299999993
+      data:
+        first:
+          name: _Int
+        second: 1
+      data:
+        first:
+          name: _RInt
+        second: 2
+      data:
+        first:
+          name: _SSamp
+        second: .0199999996
+      data:
+        first:
+          name: _Samp
+        second: 15
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _TintColor
+        second: {r: 1, g: .710364282, b: .440298498, a: 1}
+      data:
+        first:
+          name: _Cen
+        second: {r: 148.604507, g: 208.940216, b: 0, a: 0}

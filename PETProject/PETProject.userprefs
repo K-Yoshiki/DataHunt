@@ -1,0 +1,14 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../Downloads/Traffic/Assets/Scripts/CameraContoroller.cs">
+    <Files>
+      <File FileName="../../Downloads/Traffic/Assets/Scripts/Camera.cs" Line="4" Column="14" />
+      <File FileName="../../../../Applications/Unity関連/Unity シェーダー/Unity_Shader/Assets/_SolorSystem/CameraMove.cs" Line="1" Column="1" />
+      <File FileName="../../Downloads/Traffic/Assets/Scripts/CameraContoroller.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
